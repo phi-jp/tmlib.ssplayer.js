@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SpriteStudioMotion xmlns="http://www.webtech.co.jp/SpriteStudio/XML/Motion" version="4.00.02">
+	<!-- This data was created by OPTPiX SpriteStudio 5.3.0 -->
+	<Header>
+		<EndFrame>119</EndFrame>
+		<BaseTickTime>60</BaseTickTime>
+		<OptionState>
+			<ScreenSize>
+				<CanvasWidth>1024</CanvasWidth>
+				<CanvasHeight>768</CanvasHeight>
+				<MarginWidth>520</MarginWidth>
+				<MarginHeight>392</MarginHeight>
+			</ScreenSize>
+			<BgColor>0xFF323232</BgColor>
+			<hvFlipForImageOnly>1</hvFlipForImageOnly>
+		</OptionState>
+	</Header>
+	<ImageList>
+		<Image Id="1" Path="river.png" Width="256" Height="512" Bpp="32" />
+		<Image Id="2" Path="river_bg.png" Width="1024" Height="768" Bpp="32" />
+		<Image Id="3" Path="sea01.png" Width="512" Height="512" Bpp="32" />
+		<Image Id="4" Path="sea02.png" Width="512" Height="512" Bpp="32" />
+		<Image Id="5" Path="sea_spriteseet01.png" Width="1024" Height="1024" Bpp="32" />
+		<Image Id="6" Path="sea_spriteseet02.png" Width="512" Height="512" Bpp="32" />
+		<Image Id="7" Path="sea_spriteseet03.png" Width="512" Height="256" Bpp="32" />
+		<Image Id="8" Path="sidescrool.png" Width="2048" Height="1024" Bpp="32" />
+		<Image Id="9" Path="smoke.png" Width="256" Height="256" Bpp="32" />
+	</ImageList>
+	<Parts>
+		<Part Root="1">
+			<Type>1</Type>
+			<Name>root</Name>
+			<Attributes>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell</Name>
+			<ID>0</ID>
+			<ParentID>-1</ParentID>
+			<PicID>7</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>432</Bottom>
+				<Right>1024</Right>
+			</PictArea>
+			<OriginX>512</OriginX>
+			<OriginY>216</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-168</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="119" CurveType="1">
+						<Value>1015</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_2</Name>
+			<ID>1</ID>
+			<ParentID>-1</ParentID>
+			<PicID>7</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>656</Top>
+				<Left>0</Left>
+				<Bottom>1024</Bottom>
+				<Right>1024</Right>
+			</PictArea>
+			<OriginX>512</OriginX>
+			<OriginY>184</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>199</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="30" CurveType="1">
+						<Value>990</Value>
+					</Key>
+					<Key Time="31" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="60" CurveType="1">
+						<Value>990</Value>
+					</Key>
+					<Key Time="61" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="90" CurveType="1">
+						<Value>990</Value>
+					</Key>
+					<Key Time="91" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="119" CurveType="1">
+						<Value>990</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_1</Name>
+			<ID>2</ID>
+			<ParentID>-1</ParentID>
+			<PicID>7</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>448</Top>
+				<Left>16</Left>
+				<Bottom>672</Bottom>
+				<Right>1040</Right>
+			</PictArea>
+			<OriginX>512</OriginX>
+			<OriginY>112</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>8</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="60" CurveType="1">
+						<Value>1007</Value>
+					</Key>
+					<Key Time="61" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="119" CurveType="1">
+						<Value>1007</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+	</Parts>
+</SpriteStudioMotion>

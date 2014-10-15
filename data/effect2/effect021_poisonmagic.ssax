@@ -1,0 +1,2429 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SpriteStudioMotion xmlns="http://www.webtech.co.jp/SpriteStudio/XML/Motion" version="4.00.02">
+	<!-- This data was created by OPTPiX SpriteStudio 5.3.0 -->
+	<Header>
+		<EndFrame>59</EndFrame>
+		<BaseTickTime>30</BaseTickTime>
+		<OptionState>
+			<ScreenSize>
+				<CanvasWidth>960</CanvasWidth>
+				<CanvasHeight>960</CanvasHeight>
+				<MarginWidth>488</MarginWidth>
+				<MarginHeight>488</MarginHeight>
+			</ScreenSize>
+			<BgColor>0xFF323232</BgColor>
+			<hvFlipForImageOnly>1</hvFlipForImageOnly>
+		</OptionState>
+	</Header>
+	<ImageList>
+		<Image Id="1" Path="effect001.png" Width="1024" Height="1024" Bpp="32" />
+	</ImageList>
+	<Parts>
+		<Part Root="1">
+			<Type>1</Type>
+			<Name>root</Name>
+			<Attributes>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>Mist1</Name>
+			<ID>0</ID>
+			<ParentID>-1</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>512</Top>
+				<Left>0</Left>
+				<Bottom>768</Bottom>
+				<Right>256</Right>
+			</PictArea>
+			<OriginX>128</OriginX>
+			<OriginY>128</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-16</Value>
+					</Key>
+					<Key Time="52" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="52" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="52" CurveType="1">
+						<Value>-360.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>5.000</Value>
+					</Key>
+					<Key Time="5" CurveType="1">
+						<Value>5.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.437</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>5.000</Value>
+					</Key>
+					<Key Time="5" CurveType="1">
+						<Value>5.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.437</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="TRAN" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="5" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="52" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="5">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42">
+						<Value>0</Value>
+					</Key>
+					<Key Time="52">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="PCOL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Type>1</Type>
+						<Blend>0</Blend>
+						<Value>
+							<Red>52</Red>
+							<Green>2</Green>
+							<Blue>2</Blue>
+							<Alpha>255</Alpha>
+						</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>Mist2</Name>
+			<ID>1</ID>
+			<ParentID>-1</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>512</Top>
+				<Left>0</Left>
+				<Bottom>768</Bottom>
+				<Right>256</Right>
+			</PictArea>
+			<OriginX>128</OriginX>
+			<OriginY>128</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>16</Value>
+					</Key>
+					<Key Time="52" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="52" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="52" CurveType="1">
+						<Value>360.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>5.000</Value>
+					</Key>
+					<Key Time="5" CurveType="1">
+						<Value>5.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.437</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>5.000</Value>
+					</Key>
+					<Key Time="5" CurveType="1">
+						<Value>5.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.437</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="TRAN" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="5" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="52" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="5">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42">
+						<Value>0</Value>
+					</Key>
+					<Key Time="52">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="PCOL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Type>1</Type>
+						<Blend>0</Blend>
+						<Value>
+							<Red>52</Red>
+							<Green>2</Green>
+							<Blue>2</Blue>
+							<Alpha>255</Alpha>
+						</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>2</Type>
+			<Name>part_1</Name>
+			<ID>2</ID>
+			<ParentID>-1</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>0</Bottom>
+				<Right>0</Right>
+			</PictArea>
+			<OriginX>0</OriginX>
+			<OriginY>0</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="59" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="59" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="59" CurveType="1">
+						<Value>360.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="20">
+						<Value>0</Value>
+					</Key>
+					<Key Time="59">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>Smoke1</Name>
+			<ID>3</ID>
+			<ParentID>2</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>512</Top>
+				<Left>768</Left>
+				<Bottom>768</Bottom>
+				<Right>896</Right>
+			</PictArea>
+			<OriginX>64</OriginX>
+			<OriginY>240</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="38" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="38" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="38" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAX" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAY" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0.110</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.583</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>2.241</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="TRAN" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="55" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="20">
+						<Value>0</Value>
+					</Key>
+					<Key Time="24">
+						<Value>0</Value>
+					</Key>
+					<Key Time="38">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="PCOL" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Type>1</Type>
+						<Blend>0</Blend>
+						<Value>
+							<Red>136</Red>
+							<Green>0</Green>
+							<Blue>0</Blue>
+							<Alpha>255</Alpha>
+						</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="VERT" Inherit="100">
+					<Key Time="24" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>0</X>
+							<Y>0</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>0</X>
+							<Y>0</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-6</X>
+							<Y>-16</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>2</X>
+							<Y>-16</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="55" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>0</X>
+							<Y>-226</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>0</X>
+							<Y>-226</Y>
+						</BottomRight>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>smoke2</Name>
+			<ID>4</ID>
+			<ParentID>2</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>512</Top>
+				<Left>768</Left>
+				<Bottom>768</Bottom>
+				<Right>896</Right>
+			</PictArea>
+			<OriginX>64</OriginX>
+			<OriginY>240</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>60.000</Value>
+					</Key>
+					<Key Time="38" CurveType="1">
+						<Value>60.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAX" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAY" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0.110</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.583</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>2.241</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="TRAN" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="55" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="20">
+						<Value>0</Value>
+					</Key>
+					<Key Time="24">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="PCOL" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Type>1</Type>
+						<Blend>0</Blend>
+						<Value>
+							<Red>136</Red>
+							<Green>0</Green>
+							<Blue>0</Blue>
+							<Alpha>255</Alpha>
+						</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="VERT" Inherit="100">
+					<Key Time="24" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>0</X>
+							<Y>0</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>0</X>
+							<Y>0</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-6</X>
+							<Y>-16</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>2</X>
+							<Y>-16</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="55" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>0</X>
+							<Y>-226</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>0</X>
+							<Y>-226</Y>
+						</BottomRight>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>Smoke3</Name>
+			<ID>5</ID>
+			<ParentID>2</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>512</Top>
+				<Left>768</Left>
+				<Bottom>768</Bottom>
+				<Right>896</Right>
+			</PictArea>
+			<OriginX>64</OriginX>
+			<OriginY>240</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>120.000</Value>
+					</Key>
+					<Key Time="38" CurveType="1">
+						<Value>120.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAX" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAY" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0.110</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.583</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>2.241</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="TRAN" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="55" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="20">
+						<Value>0</Value>
+					</Key>
+					<Key Time="24">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="PCOL" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Type>1</Type>
+						<Blend>0</Blend>
+						<Value>
+							<Red>136</Red>
+							<Green>0</Green>
+							<Blue>0</Blue>
+							<Alpha>255</Alpha>
+						</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="VERT" Inherit="100">
+					<Key Time="24" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>0</X>
+							<Y>0</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>0</X>
+							<Y>0</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-6</X>
+							<Y>-16</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>2</X>
+							<Y>-16</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="55" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>0</X>
+							<Y>-226</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>0</X>
+							<Y>-226</Y>
+						</BottomRight>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>Smoke4</Name>
+			<ID>6</ID>
+			<ParentID>2</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>512</Top>
+				<Left>768</Left>
+				<Bottom>768</Bottom>
+				<Right>896</Right>
+			</PictArea>
+			<OriginX>64</OriginX>
+			<OriginY>240</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>180.000</Value>
+					</Key>
+					<Key Time="38" CurveType="1">
+						<Value>180.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAX" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAY" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0.110</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.583</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>2.241</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="TRAN" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="55" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="20">
+						<Value>0</Value>
+					</Key>
+					<Key Time="24">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="PCOL" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Type>1</Type>
+						<Blend>0</Blend>
+						<Value>
+							<Red>136</Red>
+							<Green>0</Green>
+							<Blue>0</Blue>
+							<Alpha>255</Alpha>
+						</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="VERT" Inherit="100">
+					<Key Time="24" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>0</X>
+							<Y>0</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>0</X>
+							<Y>0</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-6</X>
+							<Y>-16</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>2</X>
+							<Y>-16</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="55" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>0</X>
+							<Y>-226</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>0</X>
+							<Y>-226</Y>
+						</BottomRight>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>Smoke5</Name>
+			<ID>7</ID>
+			<ParentID>2</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>512</Top>
+				<Left>768</Left>
+				<Bottom>768</Bottom>
+				<Right>896</Right>
+			</PictArea>
+			<OriginX>64</OriginX>
+			<OriginY>240</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>240.000</Value>
+					</Key>
+					<Key Time="38" CurveType="1">
+						<Value>240.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAX" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAY" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0.110</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.583</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>2.241</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="TRAN" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="55" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="20">
+						<Value>0</Value>
+					</Key>
+					<Key Time="24">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="PCOL" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Type>1</Type>
+						<Blend>0</Blend>
+						<Value>
+							<Red>136</Red>
+							<Green>0</Green>
+							<Blue>0</Blue>
+							<Alpha>255</Alpha>
+						</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="VERT" Inherit="100">
+					<Key Time="24" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>0</X>
+							<Y>0</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>0</X>
+							<Y>0</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-6</X>
+							<Y>-16</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>2</X>
+							<Y>-16</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="55" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>0</X>
+							<Y>-226</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>0</X>
+							<Y>-226</Y>
+						</BottomRight>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>Smoke6</Name>
+			<ID>8</ID>
+			<ParentID>2</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>512</Top>
+				<Left>768</Left>
+				<Bottom>768</Bottom>
+				<Right>896</Right>
+			</PictArea>
+			<OriginX>64</OriginX>
+			<OriginY>240</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>300.000</Value>
+					</Key>
+					<Key Time="38" CurveType="1">
+						<Value>300.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAX" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAY" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0.110</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.583</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>2.241</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="TRAN" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="24" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="55" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="20">
+						<Value>0</Value>
+					</Key>
+					<Key Time="24">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="PCOL" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Type>1</Type>
+						<Blend>0</Blend>
+						<Value>
+							<Red>136</Red>
+							<Green>0</Green>
+							<Blue>0</Blue>
+							<Alpha>255</Alpha>
+						</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="VERT" Inherit="100">
+					<Key Time="24" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>0</X>
+							<Y>0</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>0</X>
+							<Y>0</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-6</X>
+							<Y>-16</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>2</X>
+							<Y>-16</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="55" CurveType="1">
+						<TopLeft>
+							<X>-102</X>
+							<Y>-2</Y>
+						</TopLeft>
+						<TopRight>
+							<X>100</X>
+							<Y>-2</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>0</X>
+							<Y>-226</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>0</X>
+							<Y>-226</Y>
+						</BottomRight>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>lightling1</Name>
+			<ID>9</ID>
+			<ParentID>-1</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>2</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>768</Left>
+				<Bottom>256</Bottom>
+				<Right>1024</Right>
+			</PictArea>
+			<OriginX>128</OriginX>
+			<OriginY>128</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="2" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="9" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="2" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="9" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>4.318</Value>
+					</Key>
+					<Key Time="9" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>4.245</Value>
+					</Key>
+					<Key Time="9" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="TRAN" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="2" CurveType="1">
+						<Value>0.460</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="2">
+						<Value>0</Value>
+					</Key>
+					<Key Time="9">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="PCOL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Type>1</Type>
+						<Blend>0</Blend>
+						<Value>
+							<Red>63</Red>
+							<Green>9</Green>
+							<Blue>53</Blue>
+							<Alpha>255</Alpha>
+						</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>lightling2</Name>
+			<ID>10</ID>
+			<ParentID>-1</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>2</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>768</Left>
+				<Bottom>256</Bottom>
+				<Right>1024</Right>
+			</PictArea>
+			<OriginX>128</OriginX>
+			<OriginY>128</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="2" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="11" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="2" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="11" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAX" Inherit="100">
+					<Key Time="2" CurveType="1">
+						<Value>4.318</Value>
+					</Key>
+					<Key Time="11" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAY" Inherit="100">
+					<Key Time="2" CurveType="1">
+						<Value>4.245</Value>
+					</Key>
+					<Key Time="11" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="TRAN" Inherit="100">
+					<Key Time="2" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="4" CurveType="1">
+						<Value>0.650</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="2">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>0</Value>
+					</Key>
+					<Key Time="11">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="PCOL" Inherit="100">
+					<Key Time="2" CurveType="1">
+						<Type>1</Type>
+						<Blend>0</Blend>
+						<Value>
+							<Red>63</Red>
+							<Green>9</Green>
+							<Blue>53</Blue>
+							<Alpha>255</Alpha>
+						</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>lightling3</Name>
+			<ID>11</ID>
+			<ParentID>-1</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>2</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>768</Left>
+				<Bottom>256</Bottom>
+				<Right>1024</Right>
+			</PictArea>
+			<OriginX>128</OriginX>
+			<OriginY>128</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="4" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="6" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="13" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="4" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="6" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="13" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAX" Inherit="100">
+					<Key Time="4" CurveType="1">
+						<Value>4.318</Value>
+					</Key>
+					<Key Time="13" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAY" Inherit="100">
+					<Key Time="4" CurveType="1">
+						<Value>4.245</Value>
+					</Key>
+					<Key Time="13" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="TRAN" Inherit="100">
+					<Key Time="4" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="6" CurveType="1">
+						<Value>0.550</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="4">
+						<Value>0</Value>
+					</Key>
+					<Key Time="6">
+						<Value>0</Value>
+					</Key>
+					<Key Time="13">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="PCOL" Inherit="100">
+					<Key Time="4" CurveType="1">
+						<Type>1</Type>
+						<Blend>0</Blend>
+						<Value>
+							<Red>63</Red>
+							<Green>9</Green>
+							<Blue>53</Blue>
+							<Alpha>255</Alpha>
+						</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>Ameba1</Name>
+			<ID>12</ID>
+			<ParentID>-1</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>2</TransBlendType>
+			<PictArea>
+				<Top>640</Top>
+				<Left>896</Left>
+				<Bottom>768</Bottom>
+				<Right>1024</Right>
+			</PictArea>
+			<OriginX>64</OriginX>
+			<OriginY>64</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="30" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="35" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="30" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="35" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAX" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>2.073</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAY" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>2.010</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="TRAN" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="25" CurveType="1">
+						<Value>0.160</Value>
+					</Key>
+					<Key Time="35" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="20">
+						<Value>0</Value>
+					</Key>
+					<Key Time="25">
+						<Value>0</Value>
+					</Key>
+					<Key Time="30">
+						<Value>0</Value>
+					</Key>
+					<Key Time="35">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="PCOL" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<Type>1</Type>
+						<Blend>0</Blend>
+						<Value>
+							<Red>29</Red>
+							<Green>16</Green>
+							<Blue>200</Blue>
+							<Alpha>255</Alpha>
+						</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="VERT" Inherit="100">
+					<Key Time="20" CurveType="1">
+						<TopLeft>
+							<X>-42</X>
+							<Y>-20</Y>
+						</TopLeft>
+						<TopRight>
+							<X>39</X>
+							<Y>-13</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-25</X>
+							<Y>15</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>13</X>
+							<Y>-10</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="25" CurveType="1">
+						<TopLeft>
+							<X>-42</X>
+							<Y>-20</Y>
+						</TopLeft>
+						<TopRight>
+							<X>39</X>
+							<Y>-13</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-25</X>
+							<Y>15</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>13</X>
+							<Y>-10</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="30" CurveType="1">
+						<TopLeft>
+							<X>-3</X>
+							<Y>-20</Y>
+						</TopLeft>
+						<TopRight>
+							<X>10</X>
+							<Y>-20</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-3</X>
+							<Y>-10</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>37</X>
+							<Y>19</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="35" CurveType="1">
+						<TopLeft>
+							<X>5</X>
+							<Y>0</Y>
+						</TopLeft>
+						<TopRight>
+							<X>27</X>
+							<Y>-24</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-31</X>
+							<Y>-8</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>19</X>
+							<Y>-17</Y>
+						</BottomRight>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>Ameba2</Name>
+			<ID>13</ID>
+			<ParentID>-1</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>2</TransBlendType>
+			<PictArea>
+				<Top>640</Top>
+				<Left>896</Left>
+				<Bottom>768</Bottom>
+				<Right>1024</Right>
+			</PictArea>
+			<OriginX>64</OriginX>
+			<OriginY>64</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="24" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="34" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="39" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="24" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="34" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="39" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="24" CurveType="1">
+						<Value>85.538</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAX" Inherit="100">
+					<Key Time="24" CurveType="1">
+						<Value>2.073</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAY" Inherit="100">
+					<Key Time="24" CurveType="1">
+						<Value>2.010</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="TRAN" Inherit="100">
+					<Key Time="24" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="29" CurveType="1">
+						<Value>0.160</Value>
+					</Key>
+					<Key Time="39" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="24">
+						<Value>0</Value>
+					</Key>
+					<Key Time="29">
+						<Value>0</Value>
+					</Key>
+					<Key Time="34">
+						<Value>0</Value>
+					</Key>
+					<Key Time="39">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="PCOL" Inherit="100">
+					<Key Time="24" CurveType="1">
+						<Type>1</Type>
+						<Blend>0</Blend>
+						<Value>
+							<Red>29</Red>
+							<Green>16</Green>
+							<Blue>200</Blue>
+							<Alpha>255</Alpha>
+						</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="VERT" Inherit="100">
+					<Key Time="24" CurveType="1">
+						<TopLeft>
+							<X>-42</X>
+							<Y>-20</Y>
+						</TopLeft>
+						<TopRight>
+							<X>39</X>
+							<Y>-13</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-25</X>
+							<Y>15</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>13</X>
+							<Y>-10</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="29" CurveType="1">
+						<TopLeft>
+							<X>-26</X>
+							<Y>0</Y>
+						</TopLeft>
+						<TopRight>
+							<X>24</X>
+							<Y>-44</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-25</X>
+							<Y>15</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>13</X>
+							<Y>-10</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="34" CurveType="1">
+						<TopLeft>
+							<X>-3</X>
+							<Y>-20</Y>
+						</TopLeft>
+						<TopRight>
+							<X>10</X>
+							<Y>-20</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-23</X>
+							<Y>16</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>37</X>
+							<Y>19</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="39" CurveType="1">
+						<TopLeft>
+							<X>5</X>
+							<Y>0</Y>
+						</TopLeft>
+						<TopRight>
+							<X>27</X>
+							<Y>-24</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-31</X>
+							<Y>-8</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>19</X>
+							<Y>-17</Y>
+						</BottomRight>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>Ameba3</Name>
+			<ID>14</ID>
+			<ParentID>-1</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>2</TransBlendType>
+			<PictArea>
+				<Top>640</Top>
+				<Left>896</Left>
+				<Bottom>768</Bottom>
+				<Right>1024</Right>
+			</PictArea>
+			<OriginX>64</OriginX>
+			<OriginY>64</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="28" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="38" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="43" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="28" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="38" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="43" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAX" Inherit="100">
+					<Key Time="28" CurveType="1">
+						<Value>2.073</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAY" Inherit="100">
+					<Key Time="28" CurveType="1">
+						<Value>2.010</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="TRAN" Inherit="100">
+					<Key Time="28" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="33" CurveType="1">
+						<Value>0.160</Value>
+					</Key>
+					<Key Time="43" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="28">
+						<Value>0</Value>
+					</Key>
+					<Key Time="33">
+						<Value>0</Value>
+					</Key>
+					<Key Time="38">
+						<Value>0</Value>
+					</Key>
+					<Key Time="43">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="PCOL" Inherit="100">
+					<Key Time="28" CurveType="1">
+						<Type>1</Type>
+						<Blend>0</Blend>
+						<Value>
+							<Red>29</Red>
+							<Green>16</Green>
+							<Blue>200</Blue>
+							<Alpha>255</Alpha>
+						</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="VERT" Inherit="100">
+					<Key Time="28" CurveType="1">
+						<TopLeft>
+							<X>-42</X>
+							<Y>-20</Y>
+						</TopLeft>
+						<TopRight>
+							<X>39</X>
+							<Y>-13</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-25</X>
+							<Y>15</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>13</X>
+							<Y>-10</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="33" CurveType="1">
+						<TopLeft>
+							<X>-14</X>
+							<Y>-30</Y>
+						</TopLeft>
+						<TopRight>
+							<X>39</X>
+							<Y>-13</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-35</X>
+							<Y>57</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>44</X>
+							<Y>80</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="38" CurveType="1">
+						<TopLeft>
+							<X>-57</X>
+							<Y>-51</Y>
+						</TopLeft>
+						<TopRight>
+							<X>10</X>
+							<Y>-20</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-68</X>
+							<Y>60</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>37</X>
+							<Y>19</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="43" CurveType="1">
+						<TopLeft>
+							<X>5</X>
+							<Y>0</Y>
+						</TopLeft>
+						<TopRight>
+							<X>27</X>
+							<Y>-24</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-31</X>
+							<Y>-8</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>19</X>
+							<Y>-17</Y>
+						</BottomRight>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>Ameba4</Name>
+			<ID>15</ID>
+			<ParentID>-1</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>2</TransBlendType>
+			<PictArea>
+				<Top>640</Top>
+				<Left>896</Left>
+				<Bottom>768</Bottom>
+				<Right>1024</Right>
+			</PictArea>
+			<OriginX>64</OriginX>
+			<OriginY>64</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="32" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="47" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="32" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="47" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="32" CurveType="1">
+						<Value>-127.446</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAX" Inherit="100">
+					<Key Time="32" CurveType="1">
+						<Value>2.073</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAY" Inherit="100">
+					<Key Time="32" CurveType="1">
+						<Value>2.010</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="TRAN" Inherit="100">
+					<Key Time="32" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="37" CurveType="1">
+						<Value>0.160</Value>
+					</Key>
+					<Key Time="47" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="37">
+						<Value>0</Value>
+					</Key>
+					<Key Time="42">
+						<Value>0</Value>
+					</Key>
+					<Key Time="47">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="PCOL" Inherit="100">
+					<Key Time="32" CurveType="1">
+						<Type>1</Type>
+						<Blend>0</Blend>
+						<Value>
+							<Red>29</Red>
+							<Green>16</Green>
+							<Blue>200</Blue>
+							<Alpha>255</Alpha>
+						</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="VERT" Inherit="100">
+					<Key Time="32" CurveType="1">
+						<TopLeft>
+							<X>-42</X>
+							<Y>-20</Y>
+						</TopLeft>
+						<TopRight>
+							<X>39</X>
+							<Y>-13</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-25</X>
+							<Y>15</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>13</X>
+							<Y>-10</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="37" CurveType="1">
+						<TopLeft>
+							<X>-42</X>
+							<Y>-20</Y>
+						</TopLeft>
+						<TopRight>
+							<X>-10</X>
+							<Y>-48</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>7</X>
+							<Y>89</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>61</X>
+							<Y>21</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="42" CurveType="1">
+						<TopLeft>
+							<X>-49</X>
+							<Y>-48</Y>
+						</TopLeft>
+						<TopRight>
+							<X>28</X>
+							<Y>-43</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-3</X>
+							<Y>-10</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>64</X>
+							<Y>38</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="47" CurveType="1">
+						<TopLeft>
+							<X>5</X>
+							<Y>0</Y>
+						</TopLeft>
+						<TopRight>
+							<X>27</X>
+							<Y>-24</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-31</X>
+							<Y>-8</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>19</X>
+							<Y>-17</Y>
+						</BottomRight>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>Ameba5</Name>
+			<ID>16</ID>
+			<ParentID>-1</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>2</TransBlendType>
+			<PictArea>
+				<Top>640</Top>
+				<Left>896</Left>
+				<Bottom>768</Bottom>
+				<Right>1024</Right>
+			</PictArea>
+			<OriginX>64</OriginX>
+			<OriginY>64</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="36" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="46" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="51" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="36" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="46" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="51" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAX" Inherit="100">
+					<Key Time="36" CurveType="1">
+						<Value>2.073</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAY" Inherit="100">
+					<Key Time="36" CurveType="1">
+						<Value>2.010</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="TRAN" Inherit="100">
+					<Key Time="36" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="41" CurveType="1">
+						<Value>0.160</Value>
+					</Key>
+					<Key Time="51" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="36">
+						<Value>0</Value>
+					</Key>
+					<Key Time="41">
+						<Value>0</Value>
+					</Key>
+					<Key Time="46">
+						<Value>0</Value>
+					</Key>
+					<Key Time="51">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="PCOL" Inherit="100">
+					<Key Time="36" CurveType="1">
+						<Type>1</Type>
+						<Blend>0</Blend>
+						<Value>
+							<Red>29</Red>
+							<Green>16</Green>
+							<Blue>200</Blue>
+							<Alpha>255</Alpha>
+						</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="VERT" Inherit="100">
+					<Key Time="36" CurveType="1">
+						<TopLeft>
+							<X>-42</X>
+							<Y>-20</Y>
+						</TopLeft>
+						<TopRight>
+							<X>39</X>
+							<Y>-13</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-25</X>
+							<Y>15</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>13</X>
+							<Y>-10</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="41" CurveType="1">
+						<TopLeft>
+							<X>0</X>
+							<Y>-29</Y>
+						</TopLeft>
+						<TopRight>
+							<X>64</X>
+							<Y>-64</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-1</X>
+							<Y>35</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>22</X>
+							<Y>26</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="46" CurveType="1">
+						<TopLeft>
+							<X>-68</X>
+							<Y>-36</Y>
+						</TopLeft>
+						<TopRight>
+							<X>83</X>
+							<Y>-62</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-3</X>
+							<Y>56</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>54</X>
+							<Y>-29</Y>
+						</BottomRight>
+					</Key>
+					<Key Time="51" CurveType="1">
+						<TopLeft>
+							<X>5</X>
+							<Y>0</Y>
+						</TopLeft>
+						<TopRight>
+							<X>27</X>
+							<Y>-24</Y>
+						</TopRight>
+						<BottomLeft>
+							<X>-31</X>
+							<Y>-8</Y>
+						</BottomLeft>
+						<BottomRight>
+							<X>19</X>
+							<Y>-17</Y>
+						</BottomRight>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>Mist3</Name>
+			<ID>17</ID>
+			<ParentID>-1</ParentID>
+			<PicID>0</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>512</Top>
+				<Left>0</Left>
+				<Bottom>768</Bottom>
+				<Right>256</Right>
+			</PictArea>
+			<OriginX>128</OriginX>
+			<OriginY>128</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="36" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="59" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="36" CurveType="1">
+						<Value>0</Value>
+					</Key>
+					<Key Time="59" CurveType="1">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="36" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="59" CurveType="1">
+						<Value>303.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAX" Inherit="100">
+					<Key Time="36" CurveType="1">
+						<Value>2.000</Value>
+					</Key>
+					<Key Time="51" CurveType="1">
+						<Value>4.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="SCAY" Inherit="100">
+					<Key Time="36" CurveType="1">
+						<Value>2.000</Value>
+					</Key>
+					<Key Time="51" CurveType="1">
+						<Value>4.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="TRAN" Inherit="100">
+					<Key Time="36" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+					<Key Time="41" CurveType="1">
+						<Value>1.000</Value>
+					</Key>
+					<Key Time="51" CurveType="1">
+						<Value>0.640</Value>
+					</Key>
+					<Key Time="59" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="36">
+						<Value>0</Value>
+					</Key>
+					<Key Time="59">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="PCOL" Inherit="100">
+					<Key Time="36" CurveType="1">
+						<Type>1</Type>
+						<Blend>0</Blend>
+						<Value>
+							<Red>125</Red>
+							<Green>30</Green>
+							<Blue>30</Blue>
+							<Alpha>255</Alpha>
+						</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+	</Parts>
+</SpriteStudioMotion>

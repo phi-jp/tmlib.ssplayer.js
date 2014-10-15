@@ -1,0 +1,7978 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SpriteStudioMotion xmlns="http://www.webtech.co.jp/SpriteStudio/XML/Motion" version="4.00.02">
+	<!-- This data was created by OPTPiX SpriteStudio 5.3.0 -->
+	<Header>
+		<EndFrame>95</EndFrame>
+		<BaseTickTime>10</BaseTickTime>
+		<OptionState>
+			<ScreenSize>
+				<CanvasWidth>512</CanvasWidth>
+				<CanvasHeight>512</CanvasHeight>
+				<MarginWidth>264</MarginWidth>
+				<MarginHeight>264</MarginHeight>
+			</ScreenSize>
+			<BgColor>0xFF323232</BgColor>
+			<hvFlipForImageOnly>1</hvFlipForImageOnly>
+		</OptionState>
+	</Header>
+	<ImageList>
+		<Image Id="1" Path="river.png" Width="256" Height="512" Bpp="32" />
+		<Image Id="2" Path="river_bg.png" Width="1024" Height="768" Bpp="32" />
+		<Image Id="3" Path="sea01.png" Width="512" Height="512" Bpp="32" />
+		<Image Id="4" Path="sea02.png" Width="512" Height="512" Bpp="32" />
+		<Image Id="5" Path="sea_spriteseet01.png" Width="1024" Height="1024" Bpp="32" />
+		<Image Id="6" Path="sea_spriteseet02.png" Width="512" Height="512" Bpp="32" />
+		<Image Id="7" Path="sea_spriteseet03.png" Width="512" Height="256" Bpp="32" />
+		<Image Id="8" Path="sidescrool.png" Width="2048" Height="1024" Bpp="32" />
+		<Image Id="9" Path="smoke.png" Width="256" Height="256" Bpp="32" />
+	</ImageList>
+	<Parts>
+		<Part Root="1">
+			<Type>1</Type>
+			<Name>root</Name>
+			<Attributes>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell</Name>
+			<ID>0</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_1</Name>
+			<ID>1</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_2</Name>
+			<ID>2</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_3</Name>
+			<ID>3</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_4</Name>
+			<ID>4</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_5</Name>
+			<ID>5</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_6</Name>
+			<ID>6</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_7</Name>
+			<ID>7</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_8</Name>
+			<ID>8</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_9</Name>
+			<ID>9</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_10</Name>
+			<ID>10</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_11</Name>
+			<ID>11</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_12</Name>
+			<ID>12</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_13</Name>
+			<ID>13</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_14</Name>
+			<ID>14</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_15</Name>
+			<ID>15</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_16</Name>
+			<ID>16</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_17</Name>
+			<ID>17</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_18</Name>
+			<ID>18</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_19</Name>
+			<ID>19</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_20</Name>
+			<ID>20</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_21</Name>
+			<ID>21</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_22</Name>
+			<ID>22</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_23</Name>
+			<ID>23</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_24</Name>
+			<ID>24</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_25</Name>
+			<ID>25</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_26</Name>
+			<ID>26</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_27</Name>
+			<ID>27</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_28</Name>
+			<ID>28</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_29</Name>
+			<ID>29</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_30</Name>
+			<ID>30</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_31</Name>
+			<ID>31</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_32</Name>
+			<ID>32</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_33</Name>
+			<ID>33</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_34</Name>
+			<ID>34</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_35</Name>
+			<ID>35</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_36</Name>
+			<ID>36</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_37</Name>
+			<ID>37</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_38</Name>
+			<ID>38</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_39</Name>
+			<ID>39</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_40</Name>
+			<ID>40</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_41</Name>
+			<ID>41</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_42</Name>
+			<ID>42</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_43</Name>
+			<ID>43</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_44</Name>
+			<ID>44</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_45</Name>
+			<ID>45</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_46</Name>
+			<ID>46</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_47</Name>
+			<ID>47</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_48</Name>
+			<ID>48</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_49</Name>
+			<ID>49</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_50</Name>
+			<ID>50</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_51</Name>
+			<ID>51</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_52</Name>
+			<ID>52</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_53</Name>
+			<ID>53</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_54</Name>
+			<ID>54</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_55</Name>
+			<ID>55</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_56</Name>
+			<ID>56</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_57</Name>
+			<ID>57</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_58</Name>
+			<ID>58</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_59</Name>
+			<ID>59</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>-32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_60</Name>
+			<ID>60</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>32</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_61</Name>
+			<ID>61</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>96</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_62</Name>
+			<ID>62</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>160</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+		<Part>
+			<Type>0</Type>
+			<Name>NewCell_63</Name>
+			<ID>63</ID>
+			<ParentID>-1</ParentID>
+			<PicID>6</PicID>
+			<TransBlendType>0</TransBlendType>
+			<PictArea>
+				<Top>0</Top>
+				<Left>0</Left>
+				<Bottom>64</Bottom>
+				<Right>64</Right>
+			</PictArea>
+			<OriginX>32</OriginX>
+			<OriginY>32</OriginY>
+			<InheritType>0</InheritType>
+			<Attributes>
+				<Attribute Tag="POSX" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="POSY" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>224</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="ANGL" Inherit="100">
+					<Key Time="0" CurveType="1">
+						<Value>0.000</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="HIDE">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGX" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="4">
+						<Value>64</Value>
+					</Key>
+					<Key Time="8">
+						<Value>128</Value>
+					</Key>
+					<Key Time="12">
+						<Value>192</Value>
+					</Key>
+					<Key Time="16">
+						<Value>256</Value>
+					</Key>
+					<Key Time="20">
+						<Value>320</Value>
+					</Key>
+					<Key Time="24">
+						<Value>384</Value>
+					</Key>
+					<Key Time="28">
+						<Value>448</Value>
+					</Key>
+					<Key Time="32">
+						<Value>0</Value>
+					</Key>
+					<Key Time="36">
+						<Value>64</Value>
+					</Key>
+					<Key Time="40">
+						<Value>128</Value>
+					</Key>
+					<Key Time="44">
+						<Value>192</Value>
+					</Key>
+					<Key Time="48">
+						<Value>256</Value>
+					</Key>
+					<Key Time="52">
+						<Value>320</Value>
+					</Key>
+					<Key Time="56">
+						<Value>384</Value>
+					</Key>
+					<Key Time="60">
+						<Value>448</Value>
+					</Key>
+					<Key Time="64">
+						<Value>0</Value>
+					</Key>
+					<Key Time="68">
+						<Value>64</Value>
+					</Key>
+					<Key Time="72">
+						<Value>128</Value>
+					</Key>
+					<Key Time="76">
+						<Value>192</Value>
+					</Key>
+					<Key Time="80">
+						<Value>256</Value>
+					</Key>
+					<Key Time="84">
+						<Value>320</Value>
+					</Key>
+					<Key Time="88">
+						<Value>384</Value>
+					</Key>
+					<Key Time="92">
+						<Value>448</Value>
+					</Key>
+				</Attribute>
+				<Attribute Tag="IMGY" Inherit="100">
+					<Key Time="0">
+						<Value>0</Value>
+					</Key>
+					<Key Time="32">
+						<Value>64</Value>
+					</Key>
+					<Key Time="64">
+						<Value>128</Value>
+					</Key>
+				</Attribute>
+			</Attributes>
+		</Part>
+	</Parts>
+</SpriteStudioMotion>
