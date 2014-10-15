@@ -3,11 +3,32 @@
 <head>
     <meta charset=utf-8 />
     <meta http-equiv="Content-Type" content="text/html;" />
+
+    <script src="http://dat-gui.googlecode.com/git/build/dat.gui.js"></script>
+
     <script src="http://cdn.rawgit.com/SpriteStudio/SSPlayerForCCH/master/Player/Html5Player/Html5Player/SsaPlayer.js"></script>
     <script src="http://cdn.rawgit.com/phi-jp/tmlib.js/0.3.0/build/tmlib.js"></script>
     <script src="tmlib.ssplayer.js"></script>
     
     <script type="text/javascript">
+
+
+var SS_DATA = [
+    { name: 'card', imagePath: "./data/card/", x: 50, y: 50, },
+    { name: 'comipo', imagePath: "./data/comipo/", x: 50, y: 50, },
+    { name: 'robo', imagePath: "./data/robo/", x: 50, y: 50, },
+    { name: 'effect', imagePath: "./data/effect/", x: 50, y: 50, },
+    
+    { name: 'effect001', imagePath: "./data/effect2/", x: 330, y: 450, },
+    { name: 'effect002', imagePath: "./data/effect2/", x: 330, y: 450, },
+    { name: 'effect003', imagePath: "./data/effect2/", x: 330, y: 450, },
+    { name: 'effect004', imagePath: "./data/effect2/", x: 330, y: 450, },
+    { name: 'effect017', imagePath: "./data/effect2/", x: 330, y: 450, },
+    { name: 'effect036', imagePath: "./data/effect2/", x: 330, y: 450, },
+    { name: 'effect037', imagePath: "./data/effect2/", x: 330, y: 450, },   
+
+    { name: 'sidescroll', imagePath: "./data/UV_sample/", x: 250, y: 480, },
+];
 
 tm.main(function() {
     var app = tm.display.CanvasApp("#world");
@@ -20,6 +41,14 @@ tm.main(function() {
             comipo: './data/comipo/out.json',
             robo: './data/robo/out.json',
             effect: './data/effect/out.json',
+            effect001: './data/effect2/effect001_light_magic.json',
+            effect002: './data/effect2/effect002_heavy_blow.json',
+            effect003: './data/effect2/effect003_explosion.json',
+            effect004: './data/effect2/effect004_flash.json',
+            effect017: './data/effect2/effect017_bom.json',
+            effect036: './data/effect2/effect036_sakura.json',
+            effect037: './data/effect2/effect037_hadou2.json',
+            sidescroll: './data/UV_sample/sidescroll_anime_1.json',
         }
     });
 
@@ -39,20 +68,41 @@ tm.define("MainScene", {
     init: function() {
         this.superInit();
 
-        var card = tm.ssplayer.Element("card", "./data/card/").addChildTo(this);
-        var comipo = tm.ssplayer.Element("comipo", "./data/comipo/").addChildTo(this);
-        var robo = tm.ssplayer.Element("robo", "./data/robo/").addChildTo(this);
-        var effect = tm.ssplayer.Element("effect", "./data/effect/").addChildTo(this);
+        this.elm = tm.ssplayer.Element("card", "./data/card/").addChildTo(this);
 
-        card.setPosition(40, 0);
-        robo.setPosition(300, 100);
-        effect.setPosition(0, 500);
+        var target = location.hash.substr(1) || "card";
 
-        this.elm = comipo;
+        var d = SS_DATA.filter(function(d) { return d.name == target; })[0];
+        this.reset(d);
+    },
 
-        comipo.hide();
-        robo.hide();
-        effect.hide();
+    onenter: function(e) {
+        var self = this;
+        var gui = e.app.enableDatGUI();
+        var funcs = {};
+        var ssFolder = gui.addFolder("ss");
+
+        gui.add(this.elm, 'x', 0, 640);
+        gui.add(this.elm, 'y', 0, 960);
+
+        SS_DATA.each(function(d) {
+            funcs[d.name] = function() {
+                self.reset(d);
+            };
+            ssFolder.add(funcs, d.name);
+        });
+
+        ssFolder.open();
+    },
+
+    reset: function(d) {
+        var elm = this.elm;
+
+        elm._reset(d.name, d.imagePath);
+        elm.x = (d.x !== undefined) ? d.x : 100;
+        elm.y = (d.y !== undefined) ? d.y : 100;
+
+        location.hash = d.name;
     },
 
     onpointingstart: function() {

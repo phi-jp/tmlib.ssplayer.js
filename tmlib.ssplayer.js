@@ -1,3 +1,6 @@
+/*
+ *
+ */
 
 
 tm.define("tm.ssplayer.Element", {
@@ -6,6 +9,10 @@ tm.define("tm.ssplayer.Element", {
     init: function(data, imagesPath) {
         this.superInit();
 
+        this._reset(data, imagesPath);
+    },
+
+    _reset: function(data, imagesPath) {
         if (typeof data == 'string') {
             json = tm.asset.Manager.get(data);
         }
@@ -21,6 +28,10 @@ tm.define("tm.ssplayer.Element", {
 
     _setup: function() {
         var data = this.json.data;
+
+        if (!(data instanceof Array)) {
+            data = [data];
+        }
 
         data.each(function(d, i) {
             var imageList = new SsImageList(d.images, this.imagesPath, true);
@@ -51,7 +62,7 @@ tm.define("tm.ssplayer.Element", {
     },
 
     update :function(app) {
-        this.frame+=33;
+        this.frame+=app.deltaTime;
 
         this.sprite.x = this.x;
         this.sprite.y = this.y;
@@ -64,3 +75,13 @@ tm.define("tm.ssplayer.Element", {
         canvas.restore();
     },
 });
+
+
+
+
+
+
+
+
+
+
