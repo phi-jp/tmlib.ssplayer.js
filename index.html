@@ -95,6 +95,8 @@ tm.define("MainScene", {
         });
 
         ssFolder.open();
+
+        this.gui = gui;
     },
 
     reset: function(d) {
@@ -105,6 +107,10 @@ tm.define("MainScene", {
         elm.y = (d.y !== undefined) ? d.y : 100;
 
         location.hash = d.name;
+
+        if (tm.isMobile && this.gui) {
+            this.gui.close();
+        }
     },
 
     onpointingstart: function() {
