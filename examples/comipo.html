@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <script src="http://dat-gui.googlecode.com/git/build/dat.gui.js"></script>
+
+    <script src="SsaPlayer.js"></script>
+    <script src="http://cdn.rawgit.com/phi-jp/tmlib.js/0.3.0/build/tmlib.js"></script>
+    <script src="../tmlib.ssplayer.js"></script>
+    
+    <script type="text/javascript">
+
+
+var SCREEN_WIDTH  = 960;
+var SCREEN_HEIGHT = 640;
+var SCREEN_CENTER_X = SCREEN_WIDTH/2;
+var SCREEN_CENTER_Y = SCREEN_HEIGHT/2;
+
+tm.main(function() {
+    var app = tm.display.CanvasApp("#world");
+
+    app.fitWindow();
+
+    var loading = tm.app.LoadingScene({
+        assets: {
+            comipo: './../data/comipo/out.json',
+        }
+    });
+
+    app.replaceScene(loading);
+
+    loading.onload = function() {
+        app.replaceScene(MainScene());
+    };
+
+
+    app.run();
+});
+
+tm.define("MainScene", {
+    superClass: "tm.app.Scene",
+
+    init: function() {
+        this.superInit();
+
+        tm.ssplayer.Element("comipo", "./../data/comipo/").addChildTo(this);
+    },
+
+    update: function() {
+        // this.player.x ++;
+    },
+
+    onpointingstart: function() {
+        this.player.setAnimation(2);
+        // this.elm.setAnimation(this.elm.animationIndex+1);
+        // this.elm.setAnimationByName("run_run");
+    },
+});
+
+tm.define("Comipo", {
+    superClass: "tm.ssplayer.Element",
+
+    init: function() {
+        this.superInit("comipo", "./../data/comipo/");
+    },
+});
+
+    </script>
+    <style>
+    #opt {
+        display: block;
+        background-image: url('../logo/optpix-transparent.png');
+        position: absolute;
+        width: 210px;
+        height: 80px;
+        background-size: cover;
+        right: 0px;
+        bottom: 0px;
+    }
+    </style>
+</head>
+
+<body>
+    <canvas id="world" width="960" height="640"></canvas>
+    <a id="opt" href="http://www.webtech.co.jp/spritestudio/" target="_black"></a>
+</body>
+
+</html>
