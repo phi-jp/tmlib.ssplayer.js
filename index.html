@@ -8,18 +8,22 @@
 
     <script src="http://dat-gui.googlecode.com/git/build/dat.gui.js"></script>
 
-    <script src="http://cdn.rawgit.com/SpriteStudio/SSPlayerForCCH/master/Player/Html5Player/Html5Player/SsaPlayer.js"></script>
+    <script src="examples/SsaPlayer.js"></script>
     <script src="http://cdn.rawgit.com/phi-jp/tmlib.js/0.3.0/build/tmlib.js"></script>
     <script src="tmlib.ssplayer.js"></script>
     
     <script type="text/javascript">
+    
+var SCREEN_WIDTH  = 640;
+var SCREEN_HEIGHT = 960;
+var SCREEN_CENTER_X = SCREEN_WIDTH/2;
+var SCREEN_CENTER_Y = SCREEN_HEIGHT/2;
 
 
 var SS_DATA = [
-    { name: 'card', imagePath: "./data/card/", x: 50, y: 50, },
+    { name: 'card', imagePath: "./data/card/", x: 50, y: 0, },
     { name: 'comipo', imagePath: "./data/comipo/", x: 50, y: 50, },
     { name: 'robo', imagePath: "./data/robo/", x: 50, y: 50, },
-    { name: 'effect', imagePath: "./data/effect/", x: 50, y: 50, },
     
     { name: 'effect001', imagePath: "./data/effect2/", x: 330, y: 450, },
     { name: 'effect002', imagePath: "./data/effect2/", x: 330, y: 450, },
@@ -35,6 +39,7 @@ var SS_DATA = [
 tm.main(function() {
     var app = tm.display.CanvasApp("#world");
 
+    app.resize(SCREEN_WIDTH, SCREEN_HEIGHT);
     app.fitWindow();
 
     var loading = tm.app.LoadingScene({
@@ -94,8 +99,14 @@ tm.define("MainScene", {
             ssFolder.add(funcs, d.name);
         });
 
-        ssFolder.open();
 
+        funcs.next = function() {
+            this.elm.setNextAnimation();
+        }.bind(this);
+
+        gui.add(funcs, 'next');
+
+        ssFolder.open();
         this.gui = gui;
     },
 
@@ -122,6 +133,7 @@ tm.define("MainScene", {
     </script>
     <style>
     #opt {
+        display: block;
         background-image: url('logo/optpix-transparent.png');
         position: absolute;
         width: 210px;
@@ -135,8 +147,7 @@ tm.define("MainScene", {
 
 <body>
     <canvas id="world" width="640" height="960"></canvas>
-    <div id="opt">
-    </div>
+    <a id="opt" href="http://www.webtech.co.jp/spritestudio/" target="_black"></a>
 </body>
 
 </html>

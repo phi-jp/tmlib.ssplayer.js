@@ -10,6 +10,19 @@ tm.define("tm.ssplayer.Element", {
         this.superInit();
 
         this._reset(data, imagesPath);
+
+
+        this.on("enterframe", function(e) {
+            var app = e.app;
+
+            this.frame+=app.deltaTime;
+
+
+            // this.sprite.x = this.x;
+            // this.sprite.y = this.y;
+            // this.sprite.scaleX = this.scaleX;
+            // this.sprite.scaleY = this.scaleY;
+        });
     },
 
     _reset: function(data, imagesPath) {
@@ -47,7 +60,15 @@ tm.define("tm.ssplayer.Element", {
 
     setAnimation: function(i) {
         this.animationIndex = i;
-        this.sprite.setAnimation(this.animations[this.animationIndex].animation);
+        var animation = this.animations.at(this.animationIndex);
+
+        if (animation) {
+            this.sprite.setAnimation(animation.animation);
+        }
+    },
+
+    setNextAnimation: function() {
+        this.setAnimation(this.animationIndex+1);
     },
 
     setAnimationByName: function(name) {
@@ -61,18 +82,8 @@ tm.define("tm.ssplayer.Element", {
         }, this);
     },
 
-    update :function(app) {
-        this.frame+=app.deltaTime;
-
-        this.sprite.x = this.x;
-        this.sprite.y = this.y;
-    },
-
     draw :function(canvas) {
-        canvas.save();
-        canvas.translate(this.x, this.y);
         this.sprite.draw(canvas.context, this.frame);
-        canvas.restore();
     },
 });
 
