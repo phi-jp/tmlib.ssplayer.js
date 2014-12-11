@@ -77,6 +77,10 @@ tm.define("MainScene", {
 
         this.elm = tm.ssplayer.Element("card", "./data/card/").addChildTo(this);
 
+        this.elm.onfinish = function() {
+            console.log("finish!");
+        };
+
         var target = location.hash.substr(1) || "card";
 
         var d = SS_DATA.filter(function(d) { return d.name == target; })[0];

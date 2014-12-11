@@ -56,6 +56,19 @@ tm.define("tm.ssplayer.Element", {
         }, this);
 
         this.sprite = new SsSprite(this.animations[this.animationIndex].animation);
+        this.setLoop(false);
+        this.sprite.setEndCallBack(function() {
+            this.flare("finish");
+        }.bind(this));
+    },
+
+    setLoop: function(flag) {
+        if (flag == true) {
+            this.sprite.setLoop(0);
+        }
+        else {
+            this.sprite.setLoop(1);
+        }
     },
 
     setAnimation: function(i) {
