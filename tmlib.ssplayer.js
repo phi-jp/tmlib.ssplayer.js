@@ -47,8 +47,9 @@ tm.define("tm.ssplayer.Element", {
         }
 
         data.each(function(d, i) {
-            var imageList = new SsImageList(d.images, this.imagesPath, true);
-            var animation = new SsAnimation(d.animation, imageList);
+            this._loadImages(this.imagesPath, d.images);
+
+            var animation = new SsAnimation(d.animation, d.images);
             this.animations[i] = {
                 animation: animation,
                 name: d.name,
@@ -60,6 +61,31 @@ tm.define("tm.ssplayer.Element", {
         this.sprite.setEndCallBack(function() {
             this.flare("finish");
         }.bind(this));
+    },
+
+    _loadImages: function(path, images) {
+        var assets = {};
+
+        images.each(function(imagename) {
+            // if (tm.asset.Manager.contains(imagename)) {
+            //     return ;
+            // }
+            
+            var path = this.imagesPath + imagename;
+            assets[imagename] = path;
+        }, this);
+
+        // if (Object.keys(assets).length <= 0) {
+        //     console.log("hoge");
+        //     return ;
+        // }
+
+        var loader = tm.asset.Loader();
+        loader.load(assets);
+        // loader.onload = function() {
+        //     console.log("finish!");
+        // };
+
     },
 
     setLoop: function(flag) {
@@ -106,67 +132,6 @@ tm.define("tm.ssplayer.Element", {
 
 
 ////////////////////////////////////////////////////////////
-// SsImageList
-////////////////////////////////////////////////////////////
-
-var SsImageList = window.SsImageList = function(imageFiles, aFileRoot, loadImmediately, aOnLoad) {
-
-    this.fileRoot = aFileRoot;
-    this.imagePaths = new Array();
-    this.images = new Array();
-
-    // ロード完了時に呼ばれるコールバック
-    // Callback that is called when the load is finished.
-    this.onLoad = aOnLoad;
-
-    // 全部読み込まれた場合のみユーザーが設定したコールバックを呼ぶ
-    // Only when it is all loaded, is called a callback set by the user.
-    this.onLoad_ = function () {
-        for (var i in this.images)
-            if (i != null && i.complete == false)
-                return;
-        if (this.onLoad != null)
-            this.onLoad();
-    }
-
-    for (var i = 0; i < imageFiles.length; i++) {
-        var path = this.fileRoot + imageFiles[i];
-//        console.log(path);
-        this.imagePaths.push(path);
-        var image = new Image();
-        if (loadImmediately)
-        {
-            image.onload = this.onLoad_;
-            image.src = path;
-        }
-        this.images.push(image);
-    }
-}
-
-// 指定したインデックスのImageを返す
-// Get image at specified index.
-SsImageList.prototype.getImage = function (index) {
-    if (index < 0 || index >= this.images.length) return null;
-    return this.images[index];
-}
-
-// 指定したインデックスの画像をimagePathで差し替える。
-// Replace image of specified index at imagePath.
-SsImageList.prototype.setImage = function (index, imagePath) {
-    if (index < 0 || index >= this.images.length) return null;
-    this.imagePaths[index] = this.fileRoot + imagePath;
-    this.images[index].onload = this.onLoad_;
-    this.images[index].src = this.imagePaths[index];
-}
-
-// ロード完了時コールバックを設定する
-// Set a callback when load is finished.
-SsImageList.prototype.setOnLoad = function (cb) {
-    this.onLoad = cb;
-}
-
-
-////////////////////////////////////////////////////////////
 // SsPartState
 ////////////////////////////////////////////////////////////
 
@@ -188,10 +153,10 @@ function SsPartState(name) {
 // SsAnimation
 ////////////////////////////////////////////////////////////
 
-var SsAnimation = window.SsAnimation = function(ssaData, imageList) {
+var SsAnimation = window.SsAnimation = function(ssaData, images) {
 
     this.ssaData = ssaData;
-    this.imageList = imageList;
+    this.images = images;
 
     this.partsMap = new Array();
     this.parts = ssaData.parts;
@@ -261,7 +226,8 @@ SsAnimation.prototype.drawFunc = function (ctx, frameNo, x, y, flipH, flipV, par
         var partDataLen = partData.length;
 
         var partNo = partData[iPartNo];
-        var img = this.imageList.getImage(partData[iImageNo]);
+        var imageName = this.images[partData[iImageNo]];
+        var img = tm.asset.Manager.get(imageName);
         var sx = partData[iSouX];
         var sy = partData[iSouY];
         var sw = partData[iSouW];
@@ -311,7 +277,7 @@ SsAnimation.prototype.drawFunc = function (ctx, frameNo, x, y, flipH, flipV, par
             //      sy = (sy < 0) ? 0 : sy;
             //      console.log(sx, sy, sw, sh);
 
-            ctx.drawImage(img, sx, sy, sw, sh, -vdw / 2, -vdh / 2, vdw, vdh);
+            ctx.drawImage(img.element, sx, sy, sw, sh, -vdw / 2, -vdh / 2, vdw, vdh);
             ctx.restore();
         }
 
