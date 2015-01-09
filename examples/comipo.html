@@ -8,8 +8,7 @@
 
     <script src="http://dat-gui.googlecode.com/git/build/dat.gui.js"></script>
 
-    <script src="http://cdn.rawgit.com/phi-jp/SSPlayerForHTML5/0.0.1/ssplayer.js"></script>
-    <script src="http://cdn.rawgit.com/phi-jp/tmlib.js/0.3.0/build/tmlib.js"></script>
+    <script src="http://cdn.rawgit.com/phi-jp/tmlib.js/0.4.1/build/tmlib.js"></script>
     <script src="../tmlib.ssplayer.js"></script>
     
     <script type="text/javascript">
@@ -25,7 +24,7 @@ tm.main(function() {
 
     app.fitWindow();
 
-    var loading = tm.app.LoadingScene({
+    var loading = tm.scene.LoadingScene({
         assets: {
             comipo: './../data/comipo/out.json',
         }
@@ -47,7 +46,7 @@ tm.define("MainScene", {
     init: function() {
         this.superInit();
 
-        tm.ssplayer.Element("comipo", "./../data/comipo/").addChildTo(this);
+        this.player = tm.ssplayer.Element("comipo", "./../data/comipo/").addChildTo(this);
     },
 
     update: function() {

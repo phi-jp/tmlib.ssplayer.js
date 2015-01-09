@@ -47,9 +47,9 @@ tm.define("tm.ssplayer.Element", {
         }
 
         data.each(function(d, i) {
-            this._loadImages(this.imagesPath, d.images);
+            var images = this._loadImages(this.imagesPath, d.images);
 
-            var animation = new SsAnimation(d.animation, d.images);
+            var animation = new SsAnimation(d.animation, images);
             this.animations[i] = {
                 animation: animation,
                 name: d.name,
@@ -65,14 +65,15 @@ tm.define("tm.ssplayer.Element", {
 
     _loadImages: function(path, images) {
         var assets = {};
+        var newImages = [];
 
-        images.each(function(imagename) {
-            // if (tm.asset.Manager.contains(imagename)) {
-            //     return ;
-            // }
+        images.each(function(imagename, i) {
+            var path = newImages[i] = this.imagesPath + imagename;
+            if (tm.asset.Manager.contains(path)) {
+                return ;
+            }
             
-            var path = this.imagesPath + imagename;
-            assets[imagename] = path;
+            assets[path] = path;
         }, this);
 
         // if (Object.keys(assets).length <= 0) {
@@ -80,12 +81,15 @@ tm.define("tm.ssplayer.Element", {
         //     return ;
         // }
 
-        var loader = tm.asset.Loader();
-        loader.load(assets);
+        if (Object.keys(assets).length > 0) {
+            var loader = tm.asset.Loader();
+            loader.load(assets);
+        }
         // loader.onload = function() {
         //     console.log("finish!");
         // };
 
+        return newImages;
     },
 
     setLoop: function(flag) {
